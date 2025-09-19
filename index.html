@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eva McConnell — Professional Site</title>
+  <meta name="description" content="Personal professional website for Eva McConnell — investing & strategy, ESTEEM (Notre Dame), Economics & Finance (UCD)." />
+  <meta name="theme-color" content="#0b1b3b" />
+  <meta property="og:title" content="Eva McConnell — Professional Site" />
+  <meta property="og:description" content="Investing & strategy-focused graduate student with experience in private credit, quant trading, and equity research leadership." />
+  <style>
+    /* ====== Theme (Navy & Gold) ====== */
+    :root{
+      --navy-900:#0b1b3b;
+      --navy-800:#0f244c;
+      --navy-700:#142e61;
+      --ink:#eef2fb;
+      --muted:#c9d3f1;
+      --gold:#c9a227;
+      --chip:#152a55;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      background:var(--navy-900);
+      color:var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height:1.6;
+    }
+    a{color:var(--gold);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* Header / Hero */
+    header{
+      background:linear-gradient(180deg, #0e2045, #0b1b3b);
+      border-bottom:1px solid var(--navy-700);
+    }
+    .brand{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+    h1{margin:0;font-size:clamp(1.6rem, 1.1rem + 2.4vw, 2.8rem)}
+    .tagline{margin:4px 0 0;color:var(--muted)}
+    .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid var(--navy-700);background:#132650;color:var(--ink)}
+    .btn.gold{background:var(--gold);color:#1b1b1b;border-color:#d2b557}
+    .btn:hover{filter:brightness(1.06)}
+    nav{margin-top:8px}
+    .tabs{display:flex;flex-wrap:wrap;gap:8px}
+    .tab{padding:8px 12px;border-radius:999px;background:var(--chip);border:1px solid var(--navy-700);color:var(--ink)}
+    .tab:hover{background:#19346b}
+
+    /* Sections */
+    main{display:grid;gap:22px;margin-top:18px}
+    section{background:var(--navy-800);border:1px solid var(--navy-700);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+    h2{margin:0 0 8px;font-size:1.35rem}
+    .meta{color:var(--muted)}
+
+    .cards{display:grid;gap:16px}
+    @media (min-width:900px){.cards{grid-template-columns:1fr 1fr}}
+    .xp header{display:flex;flex-direction:column;gap:4px;margin-bottom:6px}
+    @media (min-width:760px){.xp header{flex-direction:row;justify-content:space-between;align-items:baseline}}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0;padding:0;list-style:none}
+    .chips li{background:#12234a;border:1px solid var(--navy-700);padding:6px 10px;border-radius:999px}
+
+    .columns{display:grid;gap:16px}
+    @media (min-width:760px){.columns{grid-template-columns:1fr 1fr}}
+
+    footer{border-top:1px solid var(--navy-700);background:#0a1734}
+    footer small{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div>
+          <h1>Eva McConnell</h1>
+          <p class="tagline">Investing & Strategy • ESTEEM @ Notre Dame • Economics & Finance (UCD)</p>
+          <div class="cta">
+            <a class="btn gold" href="mailto:emcconn2@nd.edu">Email</a>
+            <a class="btn" href="tel:+15742172375">Call</a>
+            <a class="btn" href="https://www.linkedin.com/in/eva-mcconnell" target="_blank">LinkedIn</a>
+            <a class="btn" href="Eva-McConnell-CV.pdf" target="_blank">Download CV</a>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="tabs">
+          <a class="tab" href="#about">About</a>
+          <a class="tab" href="#education">Education</a>
+          <a class="tab" href="#experience">Experience</a>
+          <a class="tab" href="#achievements">Achievements</a>
+          <a class="tab" href="#hobbies">Hobbies</a>
+          <a class="tab" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section id="about">
+      <h2>About</h2>
+      <p>I’m a graduate student in the ESTEEM program at the University of Notre Dame (GPA 3.9/4.0, expected May 2026) with prior experience in private credit, quantitative trading, and student-led equity research. I enjoy work at the intersection of investing and strategy—evaluating opportunities, shaping theses, and translating analysis into action.</p>
+      <ul class="chips">
+        <li>Investing & Strategy</li>
+        <li>Private Credit</li>
+        <li>Quantitative Analysis</li>
+        <li>Equity Research</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="cards">
+        <article>
+          <h3>University of Notre Dame — ESTEEM (M.S.)</h3>
+          <p class="meta">Notre Dame, IN • Expected May 2026 • GPA: 3.9/4.0</p>
+        </article>
+        <article>
+          <h3>University College Dublin — B.Sc. Economics & Finance</h3>
+          <p class="meta">Dublin, Ireland • May 2025</p>
+          <ul>
+            <li>Selected for UCD London finance trip (academic performance)</li>
+            <li>Entrance Scholar (99th percentile Leaving Certificate)</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <article class="xp">
+        <header>
+          <h3>Pfingsten Partners — Strategy Consultant (Tempest)</h3>
+          <span class="meta">Chicago, IL • Jul 2025 – Present</span>
+        </header>
+        <ul><li>Conducted 50+ stakeholder interviews and market analyses to shape a multi-year growth strategy.</li></ul>
+      </article>
+      <article class="xp">
+        <header>
+          <h3>DunPort Capital — Private Credit Intern</h3>
