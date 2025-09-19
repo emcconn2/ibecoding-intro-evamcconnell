@@ -8,32 +8,23 @@
   <meta name="theme-color" content="#0b1b3b" />
   <style>
     :root{
-      --navy-900:#0b1b3b;
-      --navy-800:#0f244c;
-      --navy-700:#142e61;
-      --ink:#eef2fb;
-      --muted:#c9d3f1;
-      --gold:#c9a227;
-      --chip:#152a55;
-      --shadow:0 10px 30px rgba(0,0,0,.25);
+      --navy-900:#0b1b3b; --navy-800:#0f244c; --navy-700:#142e61;
+      --ink:#eef2fb; --muted:#c9d3f1; --gold:#c9a227; --chip:#152a55;
+      --shadow:0 10px 30px rgba(0,0,0,.25)
     }
     *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
     html,body{margin:0}
-    body{
-      background:var(--navy-900);
-      color:var(--ink);
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      line-height:1.6;
-    }
+    body{background:var(--navy-900);color:var(--ink);
+      font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6}
     a{color:var(--gold);text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:1100px;margin:0 auto;padding:24px}
 
-    /* Header / Hero */
-    header{background:linear-gradient(180deg,#0e2045,#0b1b3b);border-bottom:1px solid var(--navy-700);}
+    header{background:linear-gradient(180deg,#0e2045,#0b1b3b);border-bottom:1px solid var(--navy-700)}
     .brand{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
-    .avatar{width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);}
-    h1{margin:0;font-size:clamp(1.6rem,1.1rem+2.4vw,2.8rem)}
+    .avatar{width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
+    h1{margin:0;font-size:clamp(1.6rem,1.1rem + 2.4vw,2.8rem)}
     .tagline{margin:4px 0 0;color:var(--muted)}
     .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid var(--navy-700);background:#132650;color:var(--ink)}
@@ -44,19 +35,16 @@
     .tab{padding:8px 12px;border-radius:999px;background:var(--chip);border:1px solid var(--navy-700);color:var(--ink)}
     .tab:hover{background:#19346b}
 
-    /* Sections */
     main{display:grid;gap:22px;margin-top:18px}
     section{background:var(--navy-800);border:1px solid var(--navy-700);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
     h2{margin:0 0 8px;font-size:1.35rem}
     .meta{color:var(--muted)}
-
     .cards{display:grid;gap:16px}
     @media (min-width:900px){.cards{grid-template-columns:1fr 1fr}}
     .xp header{display:flex;flex-direction:column;gap:4px;margin-bottom:6px}
     @media (min-width:760px){.xp header{flex-direction:row;justify-content:space-between;align-items:baseline}}
     .chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0;padding:0;list-style:none}
     .chips li{background:#12234a;border:1px solid var(--navy-700);padding:6px 10px;border-radius:999px}
-
     .columns{display:grid;gap:16px}
     @media (min-width:760px){.columns{grid-template-columns:1fr 1fr}}
 
@@ -68,7 +56,6 @@
   <header>
     <div class="wrap">
       <div class="brand">
-        <!-- Profile picture -->
         <img src="EVA.jpg" alt="Headshot of Eva McConnell" class="avatar" />
         <div>
           <h1>Eva McConnell</h1>
@@ -76,13 +63,12 @@
           <div class="cta">
             <a class="btn gold" href="mailto:emcconn2@nd.edu">Email</a>
             <a class="btn" href="tel:+15742172375">Call</a>
-            <a class="btn" href="https://www.linkedin.com/in/eva-mcconnell" target="_blank">LinkedIn</a>
-            <!-- CV download button -->
+            <a class="btn" href="https://www.linkedin.com/in/eva-mcconnell" target="_blank" rel="noopener">LinkedIn</a>
             <a class="btn" href="Eva%20McConnell%20CV.pdf" download>Download CV</a>
           </div>
         </div>
       </div>
-      <nav>
+      <nav aria-label="Section navigation">
         <div class="tabs">
           <a class="tab" href="#about">About</a>
           <a class="tab" href="#education">Education</a>
@@ -95,7 +81,121 @@
     </div>
   </header>
 
-  <!-- You can keep all your sections from the last version here (About, Education, Experience, etc.) -->
+  <main id="main" class="wrap">
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>I’m a graduate student in the ESTEEM program at the University of Notre Dame (GPA 3.9/4.0, expected May 2026) with prior experience in private credit, quantitative trading, and student-led equity research. I enjoy work at the intersection of investing and strategy—evaluating opportunities, shaping theses, and translating analysis into action.</p>
+      <ul class="chips">
+        <li>Investing & Strategy</li><li>Private Credit</li><li>Quantitative Analysis</li><li>Equity Research</li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="cards">
+        <article>
+          <h3>University of Notre Dame — ESTEEM (M.S.)</h3>
+          <p class="meta">Notre Dame, IN • Expected May 2026 • GPA: 3.9/4.0</p>
+        </article>
+        <article>
+          <h3>University College Dublin — B.Sc. Economics & Finance (Math & Stats)</h3>
+          <p class="meta">Dublin, Ireland • May 2025</p>
+          <ul>
+            <li>Selected for competitive UCD London finance trip based on academic performance</li>
+            <li>Entrance Scholar for Leaving Certificate results in 99th percentile nationwide</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Professional Experience</h2>
+
+      <article class="xp">
+        <header>
+          <h3>Pfingsten Partners — Graduate Student Strategy Consultant (Tempest)</h3>
+          <span class="meta">Chicago, IL • Jul 2025 – Present</span>
+        </header>
+        <ul>
+          <li>Conducted 50+ stakeholder interviews and market analyses across data center, healthcare, and enterprise sectors to evaluate opportunities and shape a multi-year growth strategy.</li>
+        </ul>
+      </article>
+
+      <article class="xp">
+        <header>
+          <h3>DunPort Capital Management — Private Credit Intern</h3>
+          <span class="meta">Dublin, Ireland • Sep 2023 – May 2024</span>
+        </header>
+        <ul>
+          <li>Contributed to 3 closed transactions totaling €51M+; supported structuring, diligence, and investment committee materials.</li>
+          <li>Analyzed financials and market data to assess borrower performance, liquidity, leverage, and risk-adjusted returns.</li>
+          <li>Monitored portfolio performance and covenant compliance; produced cash flow and credit profile models.</li>
+        </ul>
+      </article>
+
+      <article class="xp">
+        <header>
+          <h3>Susquehanna International Group (SIG) — Quantitative Trading Intern</h3>
+          <span class="meta">Dublin, Ireland • Jun 2023 – Aug 2023</span>
+        </header>
+        <ul>
+          <li>Python-based statistical analysis on 400+ US equities during premarket, identifying price inefficiencies and latency-driven discrepancies.</li>
+          <li>Back-tested ETF trading strategies to evaluate risk and profitability for the desk.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" aria-labelledby="achievements-title">
+      <h2 id="achievements-title">Leadership & Achievements</h2>
+      <article class="xp">
+        <header>
+          <h3>UCD Student Managed Fund — Head of Equity Research / Analyst</h3>
+          <span class="meta">Dublin, Ireland • Sep 2022 – May 2025</span>
+        </header>
+        <ul>
+          <li>Led equity research for a €30,000 fund with 100+ student analysts; promoted from Assistant Sector Manager.</li>
+          <li>Oversaw stock selection, investment strategy, and equity pitch development.</li>
+        </ul>
+      </article>
+      <article class="xp">
+        <header>
+          <h3>Gaelic Football — Player & Club Captain</h3>
+          <span class="meta">2007 – Present</span>
+        </header>
+        <ul>
+          <li>Represented county team (2015–2021); Leinster Minor Championship-winning squad (2021).</li>
+          <li>Captained club minor team to a County Championship victory (2021).</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies" aria-labelledby="hobbies-title">
+      <h2 id="hobbies-title">Hobbies</h2>
+      <ul class="chips">
+        <li>Gaelic football</li><li>Reading</li><li>Electric guitar</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="columns">
+        <div>
+          <p><strong>Email:</strong> <a href="mailto:emcconn2@nd.edu">emcconn2@nd.edu</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+15742172375">+1 (574) 217-2375</a></p>
+        </div>
+        <div>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/eva-mcconnell" target="_blank" rel="noopener">linkedin.com/in/eva-mcconnell</a></p>
+          <p><strong>Location:</strong> South Bend, IN</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="wrap">
@@ -108,5 +208,3 @@
   </script>
 </body>
 </html>
-
-
