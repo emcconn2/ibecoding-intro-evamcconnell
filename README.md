@@ -1,7 +1,8 @@
 # MicroWealth AI
-Link to video demo: https://drive.google.com/drive/folders/1gdbWlkGV5PPNvJAcGlyHdOyj7vAgxnat?usp=drive_link
+
 **Project Overview and Purpose**
 MicroWealth AI is an educational investing assistant that helps first-time investors learn how to build balanced, low-cost ETF portfolios. The goal is to make investing approachable and understandable rather than intimidating. Users answer a few simple questions about their investment goals, time horizon, and risk tolerance. The AI then creates a sample ETF portfolio, explains the reasoning behind it, and displays it in clear, friendly language. The project is meant to teach the principles of diversification and risk management without giving financial advice.
+Link to video demo: https://drive.google.com/drive/folders/1gdbWlkGV5PPNvJAcGlyHdOyj7vAgxnat?usp=drive_link
 
 **Instructions for Viewing and Running the Project**
 
